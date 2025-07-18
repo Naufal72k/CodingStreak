@@ -1,0 +1,418 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>bikinwebyuk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;family=Roboto&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Header Section -->
+    <header class="relative">
+      <img
+        alt="Majestic Asia landscape with mountains and sea under a clear sky"
+        class="w-full h-[700px] object-cover"
+        height="700"
+        src="https://storage.googleapis.com/a1aa/image/5888c932-45d5-4c80-15f5-f973287ed5c6.jpg"
+        width="1920"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between px-6 sm:px-12 md:px-20 py-10"
+      >
+        <nav
+          class="flex items-center justify-between text-white font-playfair text-lg tracking-wide"
+        >
+          <div class="font-playfair text-2xl font-normal">bikinwebyuk</div>
+          <ul
+            class="hidden md:flex space-x-6 border border-white rounded-full px-5 py-2 text-sm font-semibold"
+          >
+            <li>
+              <a class="bg-white bg-opacity-20 rounded-full px-4 py-1" href="#">
+                HOME
+              </a>
+            </li>
+            <li>
+              <a class="hover:underline" href="#"> ABOUT US </a>
+            </li>
+            <li class="relative group">
+              <button
+                class="flex items-center space-x-1 hover:underline focus:outline-none"
+              >
+                <span> DESTINATION </span>
+                <i class="fas fa-chevron-down text-xs"> </i>
+              </button>
+            </li>
+            <li class="relative group">
+              <button
+                class="flex items-center space-x-1 hover:underline focus:outline-none"
+              >
+                <span> PAGE </span>
+                <i class="fas fa-chevron-down text-xs"> </i>
+              </button>
+            </li>
+            <li class="relative group">
+              <button
+                class="flex items-center space-x-1 hover:underline focus:outline-none"
+              >
+                <span> BLOG </span>
+                <i class="fas fa-chevron-down text-xs"> </i>
+              </button>
+            </li>
+          </ul>
+          <button
+            aria-label="Menu"
+            class="md:hidden text-white text-xl focus:outline-none"
+          >
+            <i class="fas fa-bars"> </i>
+          </button>
+        </nav>
+        <div class="max-w-xl text-white">
+          <span
+            class="inline-block bg-gray-800 bg-opacity-70 rounded-full px-3 py-1 text-xs font-semibold mb-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Rasakan Pengalaman
+          </span>
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight max-w-md"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            Jelajahi Keindahan Alam & Budaya Asia Sekarang
+          </h1>
+          <button
+            class="mt-6 bg-white text-black text-xs font-semibold rounded-full px-6 py-2 flex items-center space-x-2 hover:bg-gray-200"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <span> MULAI SEKARANG </span>
+            <i class="fas fa-arrow-right text-xs"> </i>
+          </button>
+          <div
+            class="mt-16 flex flex-col sm:flex-row sm:space-x-12 space-y-6 sm:space-y-0 text-xs font-light"
+          >
+            <div
+              class="flex items-center space-x-3 max-w-[220px]"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            >
+              <div
+                class="bg-gray-400 bg-opacity-30 rounded-full p-2 flex justify-center items-center"
+              >
+                <i class="far fa-clock text-white text-sm"> </i>
+              </div>
+              <p>
+                Nikmati perjalanan yang terencana dengan baik, setiap detail
+                diperhatikan untuk kenyamanan Anda.
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-3 max-w-[220px]"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+            >
+              <div
+                class="bg-gray-400 bg-opacity-30 rounded-full p-2 flex justify-center items-center"
+              >
+                <i class="fas fa-mountain text-white text-sm"> </i>
+              </div>
+              <p>
+                Temukan keindahan alam yang menakjubkan dan petualangan yang tak
+                terlupakan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute right-6 top-1/2 transform -translate-y-1/2 hidden sm:flex flex-col items-center space-y-6 text-white text-xs tracking-widest"
+        >
+          <a aria-label="Facebook" class="hover:text-gray-300" href="#">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-gray-300" href="#">
+            <i class="fab fa-twitter"> </i>
+          </a>
+          <a aria-label="Instagram" class="hover:text-gray-300" href="#">
+            <i class="fab fa-instagram"> </i>
+          </a>
+          <div class="border-l border-white h-16"></div>
+          <div class="rotate-90 tracking-widest">SCROLL</div>
+          <i class="fas fa-arrow-down"> </i>
+        </div>
+      </div>
+    </header>
+    <!-- Destinations Section -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16">
+      <div class="grid grid-cols-3 gap-6 mb-16">
+        <!-- Kelingking Beach (span 2 rows) -->
+        <div
+          class="relative rounded-xl overflow-hidden row-span-2"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Kelingking Beach with turquoise water and rocky cliffs in Nusa Penida, Bali"
+            class="w-full h-full object-cover"
+            height="800"
+            src="https://storage.googleapis.com/a1aa/image/cb4d445f-0dde-4727-9c91-2bbcef97e919.jpg"
+            width="600"
+          />
+          <div
+            class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg"
+          >
+            Pantai Kelingking
+            <div class="text-xs font-normal mt-1">Nusa Penida, Bali</div>
+          </div>
+          <div
+            class="absolute bottom-4 right-4 border border-white rounded-full w-8 h-8 flex justify-center items-center text-white cursor-pointer"
+          >
+            <i class="fas fa-arrow-right"> </i>
+          </div>
+        </div>
+
+        <!-- Grand Palace (top right) -->
+        <div
+          class="relative rounded-xl overflow-hidden"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Grand Palace temple with golden spires in Bangkok, Thailand"
+            class="w-full h-full object-cover"
+            height="350"
+            src="https://storage.googleapis.com/a1aa/image/930697fb-56cd-44b2-d6da-b78f54b35cbe.jpg"
+            width="400"
+          />
+          <div
+            class="absolute bottom-4 left-4 text-white font-semibold text-sm drop-shadow-lg"
+          >
+            Istana Agung
+            <div class="text-xs font-normal mt-1">Bangkok, Thailand</div>
+          </div>
+          <div
+            class="absolute bottom-4 right-4 border border-white rounded-full w-7 h-7 flex justify-center items-center text-white cursor-pointer"
+          >
+            <i class="fas fa-arrow-right text-xs"> </i>
+          </div>
+        </div>
+
+        <!-- Cappadocia (top right) -->
+        <div
+          class="relative rounded-xl overflow-hidden"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Hot air balloons flying over Cappadocia, Turkey landscape"
+            class="w-full h-full object-cover"
+            height="350"
+            src="https://storage.googleapis.com/a1aa/image/53e2d4d8-acce-47b4-3a77-225173f36891.jpg"
+            width="400"
+          />
+          <div
+            class="absolute bottom-4 left-4 text-white font-semibold text-sm drop-shadow-lg"
+          >
+            Cappadocia
+            <div class="text-xs font-normal mt-1">Turki</div>
+          </div>
+          <div
+            class="absolute bottom-4 right-4 border border-white rounded-full w-7 h-7 flex justify-center items-center text-white cursor-pointer"
+          >
+            <i class="fas fa-arrow-right text-xs"> </i>
+          </div>
+        </div>
+
+        <!-- Padar Island (span 2 columns) -->
+        <div
+          class="relative rounded-xl overflow-hidden col-span-2 h-72"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Padar Island aerial view with blue sea and rugged hills in East Nusa Tenggara"
+            class="w-full h-full object-cover"
+            height="400"
+            src="https://storage.googleapis.com/a1aa/image/1fd69ce6-4ff7-4e73-874b-dbf135497975.jpg"
+            width="800"
+          />
+          <div
+            class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg"
+          >
+            Pulau Padar
+            <div class="text-xs font-normal mt-1">Nusa Tenggara Timur</div>
+          </div>
+          <div
+            class="absolute bottom-4 right-4 border border-white rounded-full w-8 h-8 flex justify-center items-center text-white cursor-pointer"
+          >
+            <i class="fas fa-arrow-right"> </i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Section (unchanged) -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center"
+      >
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="text-2xl font-extrabold mb-4 max-w-md">
+            Rasakan Petualangan Baru bersama bikinwebyuk
+          </h2>
+          <p class="text-xs text-gray-500 mb-8 max-w-md">
+            Kami hadir untuk memberikan pengalaman perjalanan yang tak
+            terlupakan, dengan destinasi menakjubkan dan layanan terbaik.
+          </p>
+          <ul class="space-y-6 max-w-md">
+            <li
+              class="flex space-x-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div
+                class="bg-black rounded-full w-10 h-10 flex justify-center items-center text-white"
+              >
+                <i class="fas fa-shield-alt"> </i>
+              </div>
+              <div class="text-xs text-gray-600">
+                <strong class="font-semibold block"> Perjalanan Aman </strong>
+                Prioritas kami adalah keamanan dan kenyamanan Anda selama
+                perjalanan.
+              </div>
+            </li>
+            <li
+              class="flex space-x-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div
+                class="bg-black rounded-full w-10 h-10 flex justify-center items-center text-white"
+              >
+                <i class="fas fa-video"> </i>
+              </div>
+              <div class="text-xs text-gray-600">
+                <strong class="font-semibold block"> Harga Terjangkau </strong>
+                Nikmati petualangan impian tanpa menguras kantong Anda.
+              </div>
+            </li>
+            <li
+              class="flex space-x-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              <div
+                class="bg-black rounded-full w-10 h-10 flex justify-center items-center text-white"
+              >
+                <i class="fas fa-bed"> </i>
+              </div>
+              <div class="text-xs text-gray-600">
+                <strong class="font-semibold block"> Akomodasi Nyaman </strong>
+                Kami memastikan Anda mendapatkan tempat istirahat terbaik
+                setelah seharian berpetualang.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="space-y-4 rounded-xl overflow-hidden"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Green terraced hills with a woman wearing a hat looking at the landscape"
+            class="w-full rounded-xl object-cover"
+            height="400"
+            src="https://storage.googleapis.com/a1aa/image/1ba03ad3-3c42-4b01-7270-45866419f34a.jpg"
+            width="600"
+          />
+          <div class="flex space-x-4">
+            <div
+              class="relative w-1/2 rounded-lg overflow-hidden cursor-pointer"
+            >
+              <img
+                alt="Temple with a play button overlay on the image"
+                class="w-full h-full object-cover rounded-lg"
+                height="160"
+                src="https://storage.googleapis.com/a1aa/image/3c8805cd-87fe-4428-ead9-ea46ef731444.jpg"
+                width="280"
+              />
+              <div
+                class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-lg"
+              >
+                <i class="fas fa-play text-white text-3xl"> </i>
+              </div>
+            </div>
+            <div
+              class="relative w-1/2 rounded-lg overflow-hidden cursor-pointer"
+            >
+              <img
+                alt="Colorful market scene with a play button overlay on the image"
+                class="w-full h-full object-cover rounded-lg"
+                height="160"
+                src="https://storage.googleapis.com/a1aa/image/5dd0fb3c-303c-4bbf-a083-5ce09cdb5c61.jpg"
+                width="280"
+              />
+              <div
+                class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-lg"
+              >
+                <i class="fas fa-play text-white text-3xl"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Discover Section -->
+    <section
+      class="bg-black text-white py-16 px-6 sm:px-12 md:px-20"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center space-y-8 md:space-y-0"
+      >
+        <h2 class="text-3xl font-extrabold max-w-md leading-tight">
+          Temukan Keindahan Alam & Budaya yang Memukau bersama bikinwebyuk
+        </h2>
+        <div class="max-w-md text-xs text-gray-300">
+          Kami berkomitmen untuk memberikan pengalaman perjalanan yang tak
+          terlupakan, memadukan keindahan alam dan kekayaan budaya.
+          <button
+            class="block mt-6 bg-white text-black text-xs font-semibold rounded-full px-6 py-2 hover:bg-gray-200"
+          >
+            PELAJARI LEBIH LANJUT
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+  </body>
+</html>
