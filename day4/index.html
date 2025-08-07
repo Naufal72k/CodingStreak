@@ -1,0 +1,885 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>bikinwebyuk Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Custom scrollbar for product slider */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header
+      class="max-w-7xl mx-auto px-6 sm:px-10 py-6 flex items-center justify-between"
+    >
+      <div class="flex items-center space-x-1">
+        <span class="text-yellow-500 font-semibold text-lg"> bikin </span>
+        <span class="text-gray-900 font-semibold text-lg"> webyuk. </span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-normal text-gray-600">
+        <a
+          class="text-gray-900 font-semibold border-b-2 border-yellow-500 pb-1"
+          href="#"
+        >
+          Home
+        </a>
+        <a href="#"> Products </a>
+        <a href="#"> Sales </a>
+        <a href="#"> Contact </a>
+      </nav>
+      <div class="flex items-center space-x-6">
+        <button aria-label="Search" class="text-gray-600 hover:text-gray-900">
+          <i class="fas fa-search"> </i>
+        </button>
+        <button aria-label="Cart" class="text-gray-600 hover:text-gray-900">
+          <i class="fas fa-shopping-bag"> </i>
+        </button>
+        <button
+          class="bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-semibold rounded-full px-5 py-2 transition"
+        >
+          Sign in
+        </button>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="max-w-7xl mx-auto px-6 sm:px-10 pt-10 pb-20 flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-0"
+    >
+      <div
+        class="md:w-1/2 max-w-xl"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <p
+          class="text-xs font-semibold text-gray-600 tracking-widest mb-2 flex items-center gap-1"
+        >
+          KOLEKSI TERBARU
+          <span class="text-yellow-500 text-lg"> 💥 </span>
+        </p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+          Ciptakan Ruangan <br />
+          <span class="text-yellow-600"> Unik & Modern </span>
+          <span class="text-yellow-600"> . </span>
+        </h1>
+        <p class="text-gray-400 text-sm mb-8 max-w-md">
+          Ubah ruangan Anda dengan furnitur bikinwebyuk menjadi lebih minimalis
+          dan modern.
+        </p>
+        <div class="flex items-center gap-6 mb-6">
+          <button
+            class="bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-semibold rounded-full px-6 py-2 transition"
+          >
+            Temukan Sekarang
+          </button>
+          <div class="flex items-center gap-2 cursor-pointer select-none">
+            <button
+              aria-label="Play video"
+              class="w-8 h-8 rounded-full border-2 border-yellow-500 flex items-center justify-center hover:bg-yellow-500 hover:text-white transition"
+            >
+              <i class="fas fa-play text-yellow-500 text-xs"> </i>
+            </button>
+            <span class="text-sm font-normal text-gray-700">
+              Tonton Video
+            </span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="flex -space-x-3">
+            <img
+              alt="User avatar 1, person smiling"
+              class="w-8 h-8 rounded-full border-2 border-white"
+              height="32"
+              src="https://storage.googleapis.com/a1aa/image/a666ec1b-5fed-4036-926d-226e7eedd5b0.jpg"
+              width="32"
+            />
+            <img
+              alt="User avatar 2, person smiling"
+              class="w-8 h-8 rounded-full border-2 border-white"
+              height="32"
+              src="https://storage.googleapis.com/a1aa/image/34c2be80-c580-409c-6e7b-fdda828d5cf5.jpg"
+              width="32"
+            />
+            <img
+              alt="User avatar 3, person smiling"
+              class="w-8 h-8 rounded-full border-2 border-white"
+              height="32"
+              src="https://storage.googleapis.com/a1aa/image/fd511f24-c8c0-4370-97f2-322a79748538.jpg"
+              width="32"
+            />
+            <img
+              alt="User avatar 4, person smiling"
+              class="w-8 h-8 rounded-full border-2 border-white"
+              height="32"
+              src="https://storage.googleapis.com/a1aa/image/f5b59f0d-f545-45e6-53bc-b8c0a05a8bdc.jpg"
+              width="32"
+            />
+          </div>
+          <p class="text-xs text-gray-400 font-normal">
+            Digunakan oleh 300.000 orang di seluruh dunia
+          </p>
+        </div>
+      </div>
+      <div
+        class="md:w-1/2 relative flex justify-center md:justify-end"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Blue modern armchair with wooden legs on white background with abstract shapes"
+          class="relative z-10 rounded-xl shadow-lg"
+          height="280"
+          src="https://storage.googleapis.com/a1aa/image/7aa0c818-2fa9-4de8-e482-7e713f3ac6f5.jpg"
+          width="320"
+        />
+        <!-- Decorative orbit lines and stars -->
+        <svg
+          aria-hidden="true"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+          fill="none"
+          height="280"
+          viewbox="0 0 320 280"
+          width="320"
+        >
+          <ellipse
+            cx="160"
+            cy="140"
+            rx="130"
+            ry="90"
+            stroke="#F59E0B"
+            stroke-dasharray="4 6"
+            stroke-width="1.5"
+            transform="rotate(15 160 140)"
+          ></ellipse>
+          <circle cx="160" cy="140" fill="#F59E0B" r="6"></circle>
+          <circle cx="80" cy="80" fill="#0F172A" r="3"></circle>
+          <circle cx="240" cy="200" fill="#0F172A" r="3"></circle>
+          <circle cx="200" cy="60" fill="#0F172A" r="2"></circle>
+        </svg>
+        <!-- Sofa card -->
+        <div
+          class="absolute bottom-10 right-0 bg-white rounded-xl shadow-lg p-4 w-48 text-xs font-normal text-gray-900"
+          style="font-family: 'Inter', sans-serif"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <div>
+              <p class="font-semibold text-sm">Sofa</p>
+              <p class="text-gray-400 text-xs">gaya modern</p>
+            </div>
+            <p class="font-semibold text-sm">$98.59</p>
+          </div>
+          <div>
+            <p class="text-gray-400 mb-1">Warna</p>
+            <div class="flex space-x-2">
+              <span
+                aria-label="Gray color"
+                class="w-4 h-4 rounded-full bg-gray-400 border-2 border-gray-300 cursor-pointer"
+                role="button"
+                tabindex="0"
+              >
+              </span>
+              <span
+                aria-label="Yellow color"
+                class="w-4 h-4 rounded-full bg-yellow-400 border-2 border-yellow-500 cursor-pointer"
+                role="button"
+                tabindex="0"
+              >
+              </span>
+              <span
+                aria-label="Cyan color"
+                class="w-4 h-4 rounded-full bg-cyan-400 border-2 border-cyan-500 cursor-pointer"
+                role="button"
+                tabindex="0"
+              >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Two featured cards -->
+    <section
+      class="max-w-7xl mx-auto px-6 sm:px-10 grid grid-cols-1 md:grid-cols-2 gap-6 mb-20"
+    >
+      <div
+        class="bg-yellow-50 rounded-xl p-8 flex items-center gap-6"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Yellow long sofa with a small round wooden table and a floor lamp"
+          class="rounded-lg flex-shrink-0"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/361265fd-308e-4859-9b63-67c45058df26.jpg"
+          width="120"
+        />
+        <div>
+          <h3 class="font-semibold text-gray-900 mb-1 text-sm">Sofa Panjang</h3>
+          <p class="text-xs text-gray-400 mb-3">
+            Desain elegan dengan kenyamanan maksimal
+          </p>
+          <a
+            class="text-yellow-500 text-xs font-semibold hover:underline"
+            href="#"
+          >
+            BELANJA SEKARANG
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-cyan-50 rounded-xl p-8 flex items-center gap-6"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Blue dining chair with wooden legs and a white floor lamp"
+          class="rounded-lg flex-shrink-0"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/959c07d8-b6a4-4ce0-8a3e-a60a8613cae0.jpg"
+          width="120"
+        />
+        <div>
+          <h3 class="font-semibold text-gray-900 mb-1 text-sm">Kursi Makan</h3>
+          <p class="text-xs text-gray-400 mb-3">
+            Struktur kokoh dengan sentuhan modern
+          </p>
+          <a
+            class="text-yellow-500 text-xs font-semibold hover:underline"
+            href="#"
+          >
+            BELANJA SEKARANG
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Trending Products -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-10 mb-20">
+      <h2
+        class="text-center font-semibold text-lg mb-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Produk Terlaris
+      </h2>
+      <p
+        class="text-center text-xs text-gray-400 mb-10 max-w-md mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Temukan berbagai pilihan furnitur terbaik yang paling diminati pelanggan
+        kami.
+      </p>
+      <div
+        aria-label="Trending products"
+        class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-5xl mx-auto"
+      >
+        <!-- Product 1 -->
+        <div
+          class="bg-gray-50 rounded-lg p-6 flex flex-col items-center"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Clean Cut Dining Chair, gray fabric with black legs and white pillow"
+            class="mb-4 rounded-lg"
+            height="160"
+            src="https://storage.googleapis.com/a1aa/image/6b20fb33-ef48-4685-64a9-11184b0155ce.jpg"
+            width="160"
+          />
+          <p class="text-xs text-gray-400 mb-1">Kursi Makan Minimalis</p>
+          <div class="flex items-center mb-2 space-x-1 text-yellow-400 text-xs">
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star-half-alt"> </i>
+          </div>
+          <div
+            class="flex justify-between w-full items-center text-sm font-semibold text-gray-900"
+          >
+            <span> $ 299 </span>
+            <button
+              aria-label="Add Clean Cut Dining Chair to cart"
+              class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full w-7 h-7 flex items-center justify-center transition"
+            >
+              <i class="fas fa-plus"> </i>
+            </button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div
+          class="bg-gray-50 rounded-lg p-6 flex flex-col items-center"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Afternoon Coat Hanger, light gray fabric chair with round base and white pillow"
+            class="mb-4 rounded-lg"
+            height="160"
+            src="https://storage.googleapis.com/a1aa/image/32f6f1b2-cb23-4013-d6c7-3b3f5596e69e.jpg"
+            width="160"
+          />
+          <p class="text-xs text-gray-400 mb-1">Gantungan Baju Modern</p>
+          <div class="flex items-center mb-2 space-x-1 text-yellow-400 text-xs">
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star-half-alt"> </i>
+          </div>
+          <div
+            class="flex justify-between w-full items-center text-sm font-semibold text-gray-900"
+          >
+            <span> $ 270 </span>
+            <button
+              aria-label="Add Afternoon Coat Hanger to cart"
+              class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full w-7 h-7 flex items-center justify-center transition"
+            >
+              <i class="fas fa-plus"> </i>
+            </button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div
+          class="bg-gray-50 rounded-lg p-6 flex flex-col items-center"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Reading Chair, beige fabric chair with black legs and white pillow"
+            class="mb-4 rounded-lg"
+            height="160"
+            src="https://storage.googleapis.com/a1aa/image/e1dcb4cd-e99e-4c25-7d79-fb652eb27f02.jpg"
+            width="160"
+          />
+          <p class="text-xs text-gray-400 mb-1">Kursi Baca Nyaman</p>
+          <div class="flex items-center mb-2 space-x-1 text-yellow-400 text-xs">
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star-half-alt"> </i>
+          </div>
+          <div
+            class="flex justify-between w-full items-center text-sm font-semibold text-gray-900"
+          >
+            <span> $ 258 </span>
+            <button
+              aria-label="Add Reading Chair to cart"
+              class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full w-7 h-7 flex items-center justify-center transition"
+            >
+              <i class="fas fa-plus"> </i>
+            </button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div
+          class="bg-gray-50 rounded-lg p-6 flex flex-col items-center"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Circular Coffee Table, green fabric chair with black legs and white pillow"
+            class="mb-4 rounded-lg"
+            height="160"
+            src="https://storage.googleapis.com/a1aa/image/ea68b26e-55a8-4167-59b8-26a28ac6b049.jpg"
+            width="160"
+          />
+          <p class="text-xs text-gray-400 mb-1">Meja Kopi Bundar</p>
+          <div class="flex items-center mb-2 space-x-1 text-yellow-400 text-xs">
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star"> </i>
+            <i class="fas fa-star-half-alt"> </i>
+          </div>
+          <div
+            class="flex justify-between w-full items-center text-sm font-semibold text-gray-900"
+          >
+            <span> $ 399 </span>
+            <button
+              aria-label="Add Circular Coffee Table to cart"
+              class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full w-7 h-7 flex items-center justify-center transition"
+            >
+              <i class="fas fa-plus"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination dots -->
+      <div
+        class="flex justify-center mt-6 space-x-2 text-yellow-500 text-xs"
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="1000"
+      >
+        <span class="w-2 h-2 rounded-full bg-yellow-500 block"> </span>
+        <span class="w-2 h-2 rounded-full bg-gray-300 block"> </span>
+        <span class="w-2 h-2 rounded-full bg-gray-300 block"> </span>
+      </div>
+    </section>
+    <!-- Product Section with categories -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-10 mb-20">
+      <div
+        class="flex items-center space-x-2 mb-6"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h3 class="font-bold text-lg tracking-wide">PRODUK</h3>
+        <h3 class="text-4xl font-extrabold text-gray-200 select-none">
+          TERBARU
+        </h3>
+      </div>
+      <nav
+        class="flex space-x-6 text-xs text-gray-600 mb-6"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <button
+          aria-current="page"
+          class="text-yellow-500 font-semibold"
+          type="button"
+        >
+          Semua
+        </button>
+        <button class="hover:text-yellow-500 transition" type="button">
+          Furnitur
+        </button>
+        <button class="hover:text-yellow-500 transition" type="button">
+          Dekorasi
+        </button>
+        <button class="hover:text-yellow-500 transition" type="button">
+          Aksesoris
+        </button>
+      </nav>
+      <div class="grid grid-cols-1 md:grid-cols-8 gap-4">
+        <div
+          class="md:col-span-3 rounded-xl overflow-hidden"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Modern pendant lamp with black and gray geometric design on light blue background"
+            class="w-full h-full object-cover"
+            height="320"
+            src="https://storage.googleapis.com/a1aa/image/7cda2214-fca0-429b-4a8e-6dceb42aeb29.jpg"
+            width="320"
+          />
+        </div>
+        <div class="md:col-span-5 grid grid-cols-3 gap-4">
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="Slim Dining Chair, gray fabric chair with black legs and white pillow"
+              class="rounded-lg"
+              height="96"
+              src="https://storage.googleapis.com/a1aa/image/a5476bdc-d035-498f-d932-eeb3974c2825.jpg"
+              width="96"
+            />
+            <p class="text-xs text-gray-600 font-semibold">
+              Kursi Makan Ramping
+            </p>
+            <p class="text-yellow-500 text-xs font-semibold">$ 240</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="Arm Chair, beige fabric chair with black legs"
+              class="rounded-lg"
+              height="96"
+              src="https://storage.googleapis.com/a1aa/image/53859fc9-3b1d-4033-9bdd-311041d3cb4f.jpg"
+              width="96"
+            />
+            <p class="text-xs text-gray-600 font-semibold">Kursi Lengan</p>
+            <p class="text-yellow-500 text-xs font-semibold">$ 235</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="Modern Chair, beige fabric chair with black legs and white pillow"
+              class="rounded-lg"
+              height="96"
+              src="https://storage.googleapis.com/a1aa/image/5e6594d6-76dd-40a2-773f-e023bd2b652d.jpg"
+              width="96"
+            />
+            <p class="text-xs text-gray-600 font-semibold">Kursi Modern</p>
+            <p class="text-yellow-500 text-xs font-semibold">$ 265</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="Pendant Lamp, black dome shaped lamp with gold interior"
+              class="rounded-lg"
+              height="96"
+              src="https://storage.googleapis.com/a1aa/image/2e785f64-894d-413e-d224-84ed6a3e169d.jpg"
+              width="96"
+            />
+            <p class="text-xs text-gray-600 font-semibold">Lampu Gantung</p>
+            <p class="text-yellow-500 text-xs font-semibold">$ 234</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="Coffee Chair, gray fabric chair with black legs and white pillow"
+              class="rounded-lg"
+              height="96"
+              src="https://storage.googleapis.com/a1aa/image/7da5f48c-17e9-4700-f668-f6feb3ae5700.jpg"
+              width="96"
+            />
+            <p class="text-xs text-gray-600 font-semibold">Kursi Kopi</p>
+            <p class="text-yellow-500 text-xs font-semibold">$ 140</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="Arne Dining Chair, beige fabric chair with black legs"
+              class="rounded-lg"
+              height="96"
+              src="https://storage.googleapis.com/a1aa/image/21396119-b0c1-4547-de8e-e6d175ee1c2f.jpg"
+              width="96"
+            />
+            <p class="text-xs text-gray-600 font-semibold">Kursi Makan Arne</p>
+            <p class="text-yellow-500 text-xs font-semibold">$ 440</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sale Banner -->
+    <section
+      class="max-w-7xl mx-auto px-6 sm:px-10 mb-20 bg-cyan-50 rounded-xl relative overflow-visible"
+      style="font-family: 'Inter', sans-serif"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-between py-12 px-6 md:px-12 relative"
+      >
+        <div class="text-center md:text-left max-w-md">
+          <p class="text-xs text-gray-600 mb-1">Sofa Terbaik Dunia</p>
+          <h3 class="font-extrabold text-xl mb-4">
+            PROMO BERAKHIR DALAM 1 HARI
+          </h3>
+          <button
+            class="bg-black text-white text-xs font-semibold rounded px-6 py-2 hover:bg-gray-900 transition"
+            type="button"
+          >
+            Pesan Sekarang
+          </button>
+          <svg
+            aria-hidden="true"
+            class="absolute left-6 bottom-6 w-20 h-20 text-yellow-300 opacity-50"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M13 17l5-5m0 0l-5-5m5 5H6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <div class="relative max-w-lg mt-8 md:mt-0">
+          <img
+            alt="Yellow sofa with small round wooden table and floor lamp on light blue background with decorative lines"
+            class="rounded-xl shadow-lg relative z-10"
+            height="160"
+            src="https://storage.googleapis.com/a1aa/image/3d6e84c4-d027-49af-f162-8a4f8c95be14.jpg"
+            width="320"
+          />
+          <svg
+            aria-hidden="true"
+            class="absolute inset-0 w-full h-full pointer-events-none"
+            fill="none"
+            viewbox="0 0 320 160"
+          >
+            <ellipse
+              cx="160"
+              cy="80"
+              rx="140"
+              ry="70"
+              stroke="#F59E0B"
+              stroke-dasharray="4 6"
+              stroke-width="1.5"
+              transform="rotate(15 160 80)"
+            ></ellipse>
+            <circle cx="160" cy="80" fill="#F59E0B" r="6"></circle>
+            <circle cx="80" cy="40" fill="#0F172A" r="3"></circle>
+            <circle cx="240" cy="120" fill="#0F172A" r="3"></circle>
+            <circle cx="200" cy="30" fill="#0F172A" r="2"></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- Blogs Section -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-10 mb-20">
+      <h3
+        class="text-center font-semibold text-lg mb-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Blog Kami
+      </h3>
+      <p
+        class="text-center text-xs text-gray-400 mb-10 max-w-md mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Temukan ide-ide menarik untuk mempercantik rumah Anda dengan pilihan
+        furnitur kami.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <article
+          class="space-y-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Minimalist room with beige armchair, small round table, and decorative items"
+            class="rounded-lg w-full object-cover"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/f0d5160a-ff9d-4f98-cb54-4b01123d9076.jpg"
+            width="320"
+          />
+          <div class="flex items-center space-x-3 text-gray-400 text-xs">
+            <span>
+              <i class="fas fa-user"> </i>
+              Admin
+            </span>
+            <span>
+              <i class="fas fa-calendar-alt"> </i>
+              3 Agustus 2023
+            </span>
+          </div>
+          <h4 class="text-sm font-semibold truncate">
+            Desain Interior Minimalis untuk Ruangan Modern
+          </h4>
+        </article>
+        <article
+          class="space-y-2"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Modern room with two beige armchairs, small round table, and plants"
+            class="rounded-lg w-full object-cover"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/fd588ca3-1491-4ccc-9389-3b85690d6fda.jpg"
+            width="320"
+          />
+          <div class="flex items-center space-x-3 text-gray-400 text-xs">
+            <span>
+              <i class="fas fa-user"> </i>
+              Admin
+            </span>
+            <span>
+              <i class="fas fa-calendar-alt"> </i>
+              3 Agustus 2023
+            </span>
+          </div>
+          <h4 class="text-sm font-semibold truncate">
+            Tren Furnitur Terbaru untuk Tahun Ini
+          </h4>
+        </article>
+        <article
+          class="space-y-2"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="Minimalist room with wooden chair, white cabinet, hanging lamps, and plants"
+            class="rounded-lg w-full object-cover"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/6e78f691-aae3-4781-4555-3258b466e45f.jpg"
+            width="320"
+          />
+          <div class="flex items-center space-x-3 text-gray-400 text-xs">
+            <span>
+              <i class="fas fa-user"> </i>
+              Admin
+            </span>
+            <span>
+              <i class="fas fa-calendar-alt"> </i>
+              3 Agustus 2023
+            </span>
+          </div>
+          <h4 class="text-sm font-semibold truncate">
+            Tips Memilih Furnitur yang Tepat untuk Rumah Anda
+          </h4>
+        </article>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-cyan-900 text-cyan-200 py-12 px-6 sm:px-10">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+          <h4 class="font-semibold text-yellow-400 mb-4">
+            bikin
+            <span class="text-cyan-200"> webyuk. </span>
+          </h4>
+          <p class="text-xs leading-relaxed max-w-xs">
+            bikinwebyuk menyediakan berbagai pilihan furnitur berkualitas tinggi
+            untuk mempercantik setiap ruangan Anda.
+          </p>
+          <div class="flex space-x-4 mt-6 text-yellow-400 text-sm">
+            <a
+              aria-label="Facebook"
+              class="hover:text-yellow-300 transition"
+              href="#"
+            >
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+            <a
+              aria-label="Instagram"
+              class="hover:text-yellow-300 transition"
+              href="#"
+            >
+              <i class="fab fa-instagram"> </i>
+            </a>
+            <a
+              aria-label="Twitter"
+              class="hover:text-yellow-300 transition"
+              href="#"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              aria-label="LinkedIn"
+              class="hover:text-yellow-300 transition"
+              href="#"
+            >
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-4">Fitur</h5>
+          <ul class="text-xs space-y-2">
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#"> Tentang </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#"> Produk </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#"> Temukan </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#"> Kontak </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-4">Dukungan</h5>
+          <ul class="text-xs space-y-2">
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#">
+                Keranjang
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#"> Login </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#">
+                Ketentuan
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#"> Privasi </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-4">Kategori</h5>
+          <ul class="text-xs space-y-2">
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#">
+                Semua Furnitur
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#">
+                Furnitur
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#">
+                Dekorasi
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-yellow-400 transition" href="#">
+                Aksesoris
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-[10px] text-cyan-300 mt-10">
+        © 2023 bikinwebyuk. Semua Hak Dilindungi.
+      </p>
+    </footer>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+  </body>
+</html>

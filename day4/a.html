@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Kenangan</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS for Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF69B4",
+              secondary: "#FFB6C1",
+              darkpink: "#C2185B",
+              lightgray: "#F8F8F8",
+              softwhite: "#FFFBFB",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom styles for Swiper navigation */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #ff69b4 !important; /* Primary color for navigation buttons */
+      }
+      .swiper-pagination-bullet-active {
+        background: #ff69b4 !important; /* Primary color for active pagination bullet */
+      }
+      /* Ensure the body takes full height for centering */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        background-color: #f8f8f8; /* Light background for the page */
+      }
+      .swiper-container-wrapper {
+        width: 90%; /* Adjust width as needed */
+        max-width: 1200px; /* Max width for larger screens */
+        height: 600px; /* Fixed height for the carousel */
+      }
+      @media (max-width: 768px) {
+        .swiper-container-wrapper {
+          height: 400px; /* Adjust height for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Gallery Section with Swiper Carousel -->
+    <div class="swiper-container-wrapper">
+      <div class="swiper mySwiper h-full w-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=young%20couple%20laughing%20together%20in%20a%20cafe%2C%20natural%20lighting%2C%20candid%20moment%2C%20lifestyle%20photography&width=800&height=800&seq=1&orientation=squarish"
+              class="w-full h-full object-cover"
+              alt="Moment 1"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20walking%20on%20beach%20during%20sunset%2C%20romantic%20atmosphere%2C%20holding%20hands%2C%20silhouette&width=400&height=800&seq=2&orientation=portrait"
+              class="w-full h-full object-cover"
+              alt="Moment 2"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20having%20picnic%20in%20park%2C%20spring%20season%2C%20casual%20lifestyle%2C%20genuine%20smiles&width=400&height=400&seq=3&orientation=squarish"
+              class="w-full h-full object-cover"
+              alt="Moment 3"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20in%20cozy%20cafe%20reading%20books%20together%2C%20warm%20lighting%2C%20intimate%20moment&width=800&height=400&seq=4&orientation=landscape"
+              class="w-full h-full object-cover"
+              alt="Moment 4"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20cooking%20together%20in%20modern%20kitchen%2C%20casual%20lifestyle%2C%20genuine%20interaction&width=400&height=400&seq=5&orientation=squarish"
+              class="w-full h-full object-cover"
+              alt="Moment 5"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20exploring%20city%20streets%2C%20urban%20photography%2C%20candid%20moment&width=400&height=800&seq=6&orientation=portrait"
+              class="w-full h-full object-cover"
+              alt="Moment 6"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20watching%20sunset%20from%20rooftop%2C%20city%20skyline%2C%20romantic%20moment&width=400&height=400&seq=7&orientation=squarish"
+              class="w-full h-full object-cover"
+              alt="Moment 7"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20at%20amusement%20park%2C%20fun%20moment%2C%20genuine%20laughter&width=800&height=400&seq=8&orientation=landscape"
+              class="w-full h-full object-cover"
+              alt="Moment 8"
+            />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20sharing%20ice%20cream%2C%20summer%20day%2C%20casual%20moment%2C%20genuine%20happiness&width=400&height=400&seq=9&orientation=squarish"
+              class="w-full h-full object-cover"
+              alt="Moment 9"
+            />
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Swiper
+        const swiper = new Swiper(".mySwiper", {
+          effect: "coverflow", // Card-like effect
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop: true, // Loop through slides
+          autoplay: {
+            delay: 3000, // Auto-play slides every 3 seconds
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

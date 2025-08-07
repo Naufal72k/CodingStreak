@@ -1,0 +1,697 @@
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>bikinwebyuk - Toko Parfum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Header / Navbar -->
+    <header
+      class="flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 border-b border-gray-200"
+    >
+      <div class="flex items-center space-x-2">
+        <img
+          alt="bikinwebyuk logo with perfume bottle icon"
+          class="w-6 h-6"
+          height="24"
+          src="https://storage.googleapis.com/a1aa/image/0af3f64f-e6e3-4bc9-b1e7-a6c9ad9bff6c.jpg"
+          width="24"
+        />
+        <span class="font-bold text-lg select-none"> bikinwebyuk </span>
+      </div>
+      <nav
+        class="hidden md:flex space-x-6 text-xs font-semibold tracking-wide text-gray-700"
+      >
+        <a class="text-sky-600" href="#"> BERANDA </a>
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <span> BLOG </span>
+            <i class="fas fa-chevron-down text-[8px]"> </i>
+          </button>
+          <div
+            class="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-md rounded hidden group-hover:block min-w-[120px] z-10"
+          >
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Artikel 1
+            </a>
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Artikel 2
+            </a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <span> TOKO </span>
+            <i class="fas fa-chevron-down text-[8px]"> </i>
+          </button>
+          <div
+            class="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-md rounded hidden group-hover:block min-w-[120px] z-10"
+          >
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Parfum Pria
+            </a>
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Parfum Wanita
+            </a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <span> HALAMAN </span>
+            <i class="fas fa-chevron-down text-[8px]"> </i>
+          </button>
+          <div
+            class="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-md rounded hidden group-hover:block min-w-[120px] z-10"
+          >
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Tentang Kami
+            </a>
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Kontak
+            </a>
+          </div>
+        </div>
+        <a class="hover:text-sky-600" href="#"> TENTANG </a>
+        <a class="hover:text-sky-600" href="#"> HUBUNGI KAMI </a>
+      </nav>
+      <div class="flex items-center space-x-4 text-gray-700 text-sm">
+        <button aria-label="Pengaturan" class="hover:text-black">
+          <i class="fas fa-cog"> </i>
+        </button>
+        <button aria-label="Cari" class="hover:text-black">
+          <i class="fas fa-search"> </i>
+        </button>
+        <button aria-label="Keranjang" class="relative hover:text-black">
+          <i class="fas fa-shopping-cart"> </i>
+          <span
+            class="absolute -top-1 -right-2 bg-black text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center"
+          >
+            0
+          </span>
+        </button>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="bg-[#d1dbe0] flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 md:py-20"
+    >
+      <div
+        class="max-w-md md:max-w-lg"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <p class="uppercase text-xs font-bold tracking-widest mb-1">PARFUM</p>
+        <p class="uppercase text-xs font-bold tracking-widest mb-4">
+          KOLEKSI TERBARU
+        </p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-3">
+          PARFUM
+          <br />
+          ELEGAN DAN TAHAN LAMA
+        </h1>
+        <p class="text-xs max-w-xs mb-6 font-light">
+          Temukan aroma yang memikat dan tahan sepanjang hari, cocok untuk
+          setiap momen spesial Anda.
+        </p>
+        <button
+          class="bg-black text-white text-xs font-semibold uppercase px-6 py-2 tracking-widest hover:bg-gray-900"
+        >
+          BELI SEKARANG
+        </button>
+        <div class="flex space-x-2 mt-6">
+          <div class="w-6 h-[2px] bg-white rounded"></div>
+          <div class="w-3 h-[2px] bg-black rounded"></div>
+        </div>
+      </div>
+      <div class="mt-10 md:mt-0" data-aos="fade-left" data-aos-duration="1000">
+        <img
+          alt="Botol parfum mewah berwarna biru dengan desain modern"
+          class="w-56 md:w-72 mx-auto"
+          height="320"
+          src="https://storage.googleapis.com/a1aa/image/88342bc4-5aef-4231-9a39-e88c40045ae8.jpg"
+          width="280"
+        />
+      </div>
+    </section>
+    <!-- Produk Terpopuler -->
+    <section class="px-6 md:px-20 py-16">
+      <h2
+        class="text-center font-extrabold text-lg mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        PRODUK TERPOPULER
+      </h2>
+      <p
+        class="text-center text-xs mb-10 max-w-xl mx-auto font-light"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Pilihan parfum terbaik yang paling diminati pelanggan bikinwebyuk.
+      </p>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8 max-w-6xl mx-auto text-center text-xs font-light"
+      >
+        <!-- Produk 1 -->
+        <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Botol parfum pria dengan warna hitam dan desain elegan"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/c95de173-5844-4e80-8eb7-834d20b74450.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Parfum Pria Black Night 100ml</p>
+          <p class="text-gray-400 line-through text-[10px]">Rp 350.000</p>
+          <p class="font-semibold text-[12px]">Rp 280.000</p>
+        </div>
+        <!-- Produk 2 -->
+        <div data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Botol parfum wanita berwarna merah muda dengan desain elegan"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/62d49633-b0dc-4a28-8f48-e90d3e9e678c.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Parfum Wanita Rose Blossom 50ml</p>
+          <p class="font-semibold text-[12px]">Rp 320.000</p>
+        </div>
+        <!-- Produk 3 -->
+        <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Botol parfum unisex berwarna biru muda dengan desain modern"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/c16b75e9-ce64-48e0-8864-4f92bade719b.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-800 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              -20%
+            </span>
+          </div>
+          <p class="mt-2">Parfum Unisex Ocean Breeze 75ml</p>
+          <p class="text-gray-400 line-through text-[10px]">Rp 400.000</p>
+          <p class="font-semibold text-[12px]">Rp 320.000</p>
+        </div>
+        <!-- Produk 4 -->
+        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Botol parfum pria berwarna coklat dengan desain klasik"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/4ff22213-3de6-4072-c1ab-e85e4fa79dc1.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Parfum Pria Classic Wood 100ml</p>
+          <p class="font-semibold text-[12px]">Rp 350.000</p>
+        </div>
+      </div>
+      <div
+        class="text-center mt-10"
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="1000"
+      >
+        <button
+          class="bg-black text-white text-xs font-semibold uppercase px-6 py-2 tracking-widest hover:bg-gray-900"
+        >
+          LIHAT LEBIH BANYAK
+        </button>
+      </div>
+    </section>
+    <!-- Promo Parfum & Aksesoris -->
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-6 mb-16"
+    >
+      <div
+        class="bg-[#c9d9db] flex items-center px-6 py-10"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Botol parfum pria dengan latar belakang biru muda"
+          class="w-36 h-36 object-cover mr-6"
+          height="160"
+          src="https://storage.googleapis.com/a1aa/image/8320a5a8-d02d-4a78-a586-720b413e3280.jpg"
+          width="160"
+        />
+        <div>
+          <p class="uppercase text-[9px] font-light tracking-widest mb-1">
+            KOLEKSI
+          </p>
+          <h3 class="font-extrabold text-2xl mb-1">Parfum Pria</h3>
+          <a class="text-xs font-light tracking-wide hover:underline" href="#">
+            Lihat koleksi &gt;
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-[#e3d6cc] flex items-center px-6 py-10"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Botol parfum wanita dengan latar belakang krem"
+          class="w-36 h-36 object-cover mr-6"
+          height="160"
+          src="https://storage.googleapis.com/a1aa/image/ec40b625-cabe-4ef5-545b-c29585d3047c.jpg"
+          width="160"
+        />
+        <div>
+          <p class="uppercase text-[9px] font-light tracking-widest mb-1">
+            KOLEKSI
+          </p>
+          <h3 class="font-extrabold text-2xl mb-1">Parfum Wanita</h3>
+          <a class="text-xs font-light tracking-wide hover:underline" href="#">
+            Lihat koleksi &gt;
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Produk Baru -->
+    <section class="px-6 md:px-20 mb-16 max-w-6xl mx-auto">
+      <h2
+        class="text-center font-extrabold text-lg mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        PRODUK BARU
+      </h2>
+      <p
+        class="text-center text-xs mb-10 max-w-xl mx-auto font-light"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Pilihan parfum terbaru dengan aroma segar dan elegan dari bikinwebyuk.
+      </p>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8 text-center text-xs font-light"
+      >
+        <!-- Produk Baru 1 -->
+        <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Botol parfum biru dengan desain modern"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/9457bb6d-4bb1-4384-a84c-128ae6164810.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Parfum Blue Ocean 100ml</p>
+          <p class="font-semibold text-[12px]">Rp 350.000</p>
+        </div>
+        <!-- Produk Baru 2 -->
+        <div data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Jam tangan hitam modern"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/a3f9662a-a61e-401d-9002-1c9f6e750b5e.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Aksesoris Jam Tangan</p>
+          <p class="font-semibold text-[12px]">Rp 200.000</p>
+        </div>
+        <!-- Produk Baru 3 -->
+        <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Botol parfum coklat klasik"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/f3350add-e46a-4ec5-2677-22c36963c015.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Parfum Classic Wood 50ml</p>
+          <p class="font-semibold text-[12px]">Rp 300.000</p>
+        </div>
+        <!-- Produk Baru 4 -->
+        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Tas parfum abu-abu dan oranye"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/1e57519e-6b58-41a3-fca9-643e3757a824.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Parfum Eksklusif</p>
+          <p class="font-semibold text-[12px]">Rp 150.000</p>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter dan Promo Gratis Ongkir -->
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-20 mb-16 grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <div
+        class="col-span-2 bg-white border border-gray-200 rounded px-8 py-10 flex flex-col justify-center"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <div class="flex items-center mb-4 space-x-3">
+          <i class="fas fa-envelope text-xl"> </i>
+          <h3 class="uppercase text-xs font-bold tracking-widest">
+            DAFTAR NEWSLETTER KAMI:
+          </h3>
+        </div>
+        <form class="flex flex-col sm:flex-row items-center gap-3">
+          <input
+            aria-label="Alamat email"
+            class="border border-gray-300 rounded px-4 py-2 text-xs w-full sm:flex-1 focus:outline-none focus:ring-2 focus:ring-sky-600"
+            placeholder="Masukkan alamat email Anda.."
+            type="email"
+          />
+          <button
+            class="bg-black text-white text-xs font-semibold uppercase px-6 py-2 tracking-widest hover:bg-gray-900"
+            type="submit"
+          >
+            DAFTAR
+          </button>
+        </form>
+      </div>
+      <div
+        class="bg-black text-white rounded p-6 relative"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <div
+          class="absolute top-2 right-2 bg-red-600 text-[9px] font-bold uppercase px-2 py-0.5 rounded"
+        >
+          PELAJARI LEBIH
+        </div>
+        <h4 class="font-bold text-xs mb-2">GRATIS ONGKIR</h4>
+        <p class="text-[10px] font-light max-w-[160px]">
+          UNTUK PEMBELIAN DI ATAS Rp 500.000
+        </p>
+        <button
+          class="mt-6 border border-white text-white text-[10px] font-light uppercase px-4 py-1 tracking-widest hover:bg-white hover:text-black transition"
+        >
+          PELAJARI LEBIH
+        </button>
+        <img
+          alt="Latar belakang abstrak hitam dengan garis dan bentuk"
+          class="absolute bottom-0 left-0 w-full opacity-10 pointer-events-none select-none"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/8601c0fd-b5c8-4582-dc41-f110edd01bc2.jpg"
+          width="160"
+        />
+      </div>
+    </section>
+    <!-- Dari Blog Kami -->
+    <section class="max-w-6xl mx-auto px-6 md:px-20 mb-16">
+      <h2
+        class="text-center font-extrabold text-lg mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        DARI BLOG KAMI
+      </h2>
+      <p
+        class="text-center text-xs mb-10 max-w-xl mx-auto font-light"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Tips memilih parfum, tren aroma terbaru, dan cara merawat parfum favorit
+        Anda dari bikinwebyuk.
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-[10px] font-light"
+      >
+        <!-- Blog 1 -->
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <img
+            alt="Botol parfum dan bunga di meja kayu"
+            class="w-full mb-3 object-cover rounded"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/90e807ee-9964-44a7-d75e-c8d28feef3c8.jpg"
+            width="320"
+          />
+          <p class="mb-1 text-[9px] font-light text-gray-600">
+            Oleh Admin - 4 April 2024
+          </p>
+          <p class="font-semibold text-[10px]">
+            Cara Memilih Parfum Sesuai Kepribadian Anda
+          </p>
+        </div>
+        <!-- Blog 2 -->
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <img
+            alt="Botol parfum dan aksesoris di atas meja putih"
+            class="w-full mb-3 object-cover rounded"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/eac38387-6002-4e1f-e486-2d6719273aa4.jpg"
+            width="320"
+          />
+          <p class="mb-1 text-[9px] font-light text-gray-600">
+            Oleh Admin - 4 April 2024
+          </p>
+          <p class="font-semibold text-[10px]">
+            Tren Aroma Parfum Terbaru Tahun Ini
+          </p>
+        </div>
+        <!-- Blog 3 -->
+        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <img
+            alt="Wanita memegang botol parfum di ruang minimalis"
+            class="w-full mb-3 object-cover rounded"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/1a80b297-7e67-4683-45e9-ad1aae0ec943.jpg"
+            width="320"
+          />
+          <p class="mb-1 text-[9px] font-light text-gray-600">
+            Oleh Admin - 4 April 2024
+          </p>
+          <p class="font-semibold text-[10px]">
+            Tips Merawat Parfum Agar Tahan Lama
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Logo Brand -->
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-20 mb-16 flex justify-between items-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <img
+        alt="Logo brand parfum 1 hitam putih"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/42f83f35-298a-46d4-110e-88117c93de76.jpg"
+        width="100"
+      />
+      <img
+        alt="Logo brand parfum 2 hitam putih"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/ac31bc6c-69bf-47da-3d51-24f78bd6ba45.jpg"
+        width="100"
+      />
+      <img
+        alt="Logo brand parfum 3 hitam putih"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/044efcd1-346e-4123-226e-757d121e95d0.jpg"
+        width="100"
+      />
+      <img
+        alt="Logo brand parfum 4 hitam putih"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/05e62201-4feb-4cbd-3d1a-91c3993a0a79.jpg"
+        width="100"
+      />
+      <img
+        alt="Logo brand parfum 5 hitam putih"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/66674855-e50a-4d1b-a3e2-ab20c5f5bcc8.jpg"
+        width="100"
+      />
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black text-white text-[10px]">
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-20 py-12 flex flex-col items-center space-y-6"
+      >
+        <div class="flex items-center space-x-2 mb-4">
+          <img
+            alt="bikinwebyuk logo putih"
+            class="w-5 h-5"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/14d1f067-2d5c-4272-9345-c72d0e0d94b8.jpg"
+            width="20"
+          />
+          <span class="font-bold text-sm select-none"> bikinwebyuk </span>
+        </div>
+        <p class="max-w-3xl text-center leading-tight font-light">
+          Selamat datang di bikinwebyuk, toko parfum terpercaya Anda. Temukan
+          aroma favorit yang cocok untuk setiap momen dan kepribadian Anda.
+          Nikmati produk berkualitas dengan harga terbaik.
+        </p>
+        <div class="flex space-x-6 text-white text-sm">
+          <a aria-label="Facebook" class="hover:text-sky-600" href="#">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-sky-600" href="#">
+            <i class="fab fa-twitter"> </i>
+          </a>
+          <a aria-label="RSS" class="hover:text-sky-600" href="#">
+            <i class="fas fa-rss"> </i>
+          </a>
+          <a aria-label="Google" class="hover:text-sky-600" href="#">
+            <i class="fab fa-google"> </i>
+          </a>
+          <a aria-label="LinkedIn" class="hover:text-sky-600" href="#">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </div>
+        <div class="w-full border-t border-gray-700 mt-6"></div>
+        <div
+          class="w-full flex flex-col sm:flex-row justify-center sm:justify-between text-[9px] font-semibold uppercase tracking-widest mt-6 space-y-4 sm:space-y-0"
+        >
+          <div class="flex justify-center space-x-6">
+            <a class="hover:text-sky-600" href="#"> TENTANG </a>
+            <a class="hover:text-sky-600" href="#"> INFORMASI PENGIRIMAN </a>
+            <a class="hover:text-sky-600" href="#"> KEBIJAKAN PRIVASI </a>
+            <a class="hover:text-sky-600" href="#"> SYARAT &amp; KETENTUAN </a>
+          </div>
+          <div class="flex justify-center space-x-2">
+            <img
+              alt="Logo pembayaran Visa"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/5856e484-989f-4eff-074e-06fe49adb401.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran Mastercard"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/e4ff36dc-592b-4db5-84b5-1e9969577e2f.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran PayPal"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/801b9a4f-6340-4930-3e11-4d54cd95b6bf.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran Stripe"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/396bba90-d4a8-4277-ed16-781ba53925f7.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran American Express"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/ab2fd321-93c5-45de-33f3-7cc2d636d6b9.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran Discover"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/cd50acc4-50ab-4eaa-f046-c03edbd8365f.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran UnionPay"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/91d34844-9eb4-4dd7-6162-e744f7c0c190.jpg"
+              width="40"
+            />
+            <img
+              alt="Logo pembayaran JCB"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/70870279-5ae6-45cc-f72c-db98eb2dd6a6.jpg"
+              width="40"
+            />
+          </div>
+        </div>
+        <p class="text-center text-[8px] font-light mt-6 select-none">
+          Hak Cipta © bikinwebyuk Semua Hak Dilindungi.
+        </p>
+      </div>
+    </footer>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+  </body>
+</html>

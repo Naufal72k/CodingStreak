@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Kenangan</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS for Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF69B4",
+              secondary: "#FFB6C1",
+              darkpink: "#C2185B",
+              lightgray: "#F8F8F8",
+              softwhite: "#FFFBFB",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom styles for Swiper navigation */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #ff69b4 !important; /* Primary color for navigation buttons */
+      }
+      .swiper-pagination-bullet-active {
+        background: #ff69b4 !important; /* Primary color for active pagination bullet */
+      }
+      /* Ensure the body takes full height for centering */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        background-color: #f8f8f8; /* Light background for the page */
+      }
+      .swiper-container-wrapper {
+        width: 90%; /* Adjust width as needed */
+        max-width: 900px; /* Max width for a more compact look */
+        /* Height will be set dynamically or by slide height */
+      }
+      @media (max-width: 768px) {
+        .swiper-container-wrapper {
+          width: 95%;
+        }
+      }
+
+      /* Custom styles for the slide content */
+      .swiper-slide {
+        position: relative; /* Needed for absolute positioning of text overlay */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Align content to the bottom */
+        background-color: #fff; /* Fallback background */
+        width: 300px; /* Fixed width for 1:1 ratio */
+        height: 300px; /* Fixed height for 1:1 ratio */
+      }
+
+      @media (max-width: 640px) {
+        .swiper-slide {
+          width: 250px; /* Adjust for smaller screens */
+          height: 250px;
+        }
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1; /* Ensure image is behind the text overlay */
+      }
+
+      .text-overlay {
+        position: relative; /* To stack above the image */
+        z-index: 2; /* Ensure text overlay is above the image */
+        padding: 1rem;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Slightly transparent background */
+        backdrop-filter: blur(8px); /* The magic blur effect */
+        -webkit-backdrop-filter: blur(8px); /* For Safari support */
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+        width: 100%;
+        box-sizing: border-box; /* Include padding in width */
+      }
+      .text-overlay h3 {
+        font-size: 1.5rem; /* Tailwind text-2xl */
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      .text-overlay p {
+        font-size: 0.9rem; /* Tailwind text-sm */
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Gallery Section with Swiper Carousel -->
+    <div class="swiper-container-wrapper">
+      <div class="swiper mySwiper h-full w-full">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=young%20couple%20laughing%20together%20in%20a%20cafe%2C%20natural%20lighting%2C%20candid%20moment%2C%20lifestyle%20photography&width=800&height=800&seq=1&orientation=squarish"
+              alt="Momen Tawa di Kafe"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Tawa di Kafe</h3>
+              <p>
+                Momen-momen canda tawa kita di kafe favorit, selalu jadi
+                kenangan manis.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20walking%20on%20beach%20during%20sunset%2C%20romantic%20atmosphere%2C%20holding%20hands%2C%20silhouette&width=400&height=800&seq=2&orientation=portrait"
+              alt="Senja di Pantai"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Senja di Pantai</h3>
+              <p>
+                Berjalan bergandengan tangan menyusuri pantai saat matahari
+                terbenam.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20having%20picnic%20in%20park%2C%20spring%20season%2C%20casual%20lifestyle%2C%20genuine%20smiles&width=400&height=400&seq=3&orientation=squarish"
+              alt="Piknik di Taman"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Piknik Ceria</h3>
+              <p>
+                Menikmati indahnya musim semi dengan piknik sederhana di taman.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20in%20cozy%20cafe%20reading%20books%20together%2C%20warm%20lighting%2C%20intimate%20moment&width=800&height=400&seq=4&orientation=landscape"
+              alt="Membaca Bersama"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Dunia Buku Kita</h3>
+              <p>Menyelami dunia literasi bersama di sudut kafe yang nyaman.</p>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20cooking%20together%20in%20modern%20kitchen%2C%20casual%20lifestyle%2C%20genuine%20interaction&width=400&height=400&seq=5&orientation=squarish"
+              alt="Memasak Bersama"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Chef Cinta</h3>
+              <p>Keseruan di dapur saat kita mencoba resep baru bersama.</p>
+            </div>
+          </div>
+          <!-- Slide 6 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20exploring%20city%20streets%2C%20urban%20photography%2C%20candid%20moment&width=400&height=800&seq=6&orientation=portrait"
+              alt="Jelajah Kota"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Petualangan Urban</h3>
+              <p>
+                Menjelajahi sudut-sudut kota, menemukan keindahan di setiap
+                langkah.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 7 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20watching%20sunset%20from%20rooftop%2C%20city%20skyline%20romantic%20moment&width=400&height=400&seq=7&orientation=squarish"
+              alt="Sunset Rooftop"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Romansa Rooftop</h3>
+              <p>
+                Menyaksikan indahnya matahari terbenam dari ketinggian,
+                bersamamu.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 8 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20at%20amusement%20park%2C%20fun%20moment%2C%20genuine%20laughter&width=800&height=400&seq=8&orientation=landscape"
+              alt="Taman Hiburan"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Dunia Fantasi</h3>
+              <p>
+                Keseruan tak terlupakan di taman hiburan, penuh tawa dan
+                kebahagiaan.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 9 -->
+          <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=couple%20sharing%20ice%20cream%2C%20summer%20day%2C%20casual%20moment%2C%20genuine%20happiness&width=400&height=400&seq=9&orientation=squarish"
+              alt="Es Krim Manis"
+            />
+            <div class="text-overlay">
+              <h3 class="playfair-display">Manisnya Es Krim</h3>
+              <p>Berbagi es krim di hari yang cerah, semanis cinta kita.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Swiper
+        const swiper = new Swiper(".mySwiper", {
+          effect: "coverflow", // Card-like effect
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto", // Allows Swiper to determine number of slides based on width
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop: true, // Loop through slides
+          autoplay: {
+            delay: 3000, // Auto-play slides every 3 seconds
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1, // 1 slide on small screens
+            },
+            768: {
+              slidesPerView: 2, // 2 slides on medium screens
+            },
+            1024: {
+              slidesPerView: 3, // 3 slides on large screens
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/812225c7d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="flex justify-between items-center px-4 w-full max-w-7xl">
+      <button class="text-gray-700 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="text-gray-400 font-semibold text-lg select-none">
+        bikinwebyuk
+      </div>
+
+      <nav>
+        <a href="" class="hover:text-gray-700 text-xl"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="" class="hover:text-gray-700 text-xl"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="" class="hover:text-gray-700 text-xl"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </nav>
+    </header>
+
+    <!-- contentnya -->
+    <main
+      class="flex justify-between items-center px-4 py4 w-full max-w-7xl mx-auto"
+    >
+      <section data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="font-extrabold text-gray-900 text-4xl leading-tight">
+          Waktu Adalah <br />
+          Momen Berharga
+        </h1>
+        <p class="text-gray-500 text-xs mt-3 leading-relaxed max-w-md">
+          Momen terbaik ada di sini, sekarang. <br />
+          Waktu tidak menunggu – manfaatkannya. <br />
+          Hiduplah di masa kini dan nikmati setiap detiknya.
+        </p>
+
+        <button
+          class="mt-8 bg-gray-900 text-white text-xs font-semibold px-6 py-3 rounded-md w-max hover:bg-gray-700 transition"
+        >
+          JELAJAHI
+        </button>
+        <div class="flex items-center mt-12 space-x-4 w-full">
+          <div
+            class="font-bold text-gray-900 text-sm border-l-4 border-gray-900 pl-4"
+          >
+            +62 812 3456 7890
+          </div>
+          <p class="text-gray-400 text-xs">Kantor Pusat bikinwebyuk</p>
+        </div>
+      </section>
+
+      <!-- buat gambarnya -->
+      <section
+        class="w-full max-w-lg flex justify-center"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <img
+          src="leptop.jpg"
+          alt="Ilustrasi laptop modern"
+          class="w-64 h-64 object-cover"
+        />
+      </section>
+    </main>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+  </body>
+</html>

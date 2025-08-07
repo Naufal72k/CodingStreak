@@ -1,0 +1,530 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>FoodRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f9fafb] text-[#1f2937]">
+    <!-- Header -->
+    <header
+      class="flex flex-col sm:flex-row items-center justify-between px-6 sm:px-12 py-6 max-w-[1280px] mx-auto"
+    >
+      <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-[14px] leading-[18px] text-[#1f2937]">
+          FOOD
+        </span>
+        <span class="font-extrabold text-[14px] leading-[18px] text-[#9f1239]">
+          RO.
+        </span>
+      </div>
+      <nav
+        class="hidden sm:flex space-x-6 text-[12px] leading-[15px] text-[#374151] font-normal"
+      >
+        <a class="hover:text-[#9f1239]" href="#"> Rations </a>
+        <a class="text-[#9f1239] font-semibold" href="#"> News </a>
+        <a class="hover:text-[#9f1239]" href="#"> Delivery </a>
+        <a class="hover:text-[#9f1239]" href="#"> Feedback </a>
+        <a class="hover:text-[#9f1239]" href="#"> Contact </a>
+      </nav>
+      <div
+        class="hidden sm:flex text-[10px] leading-[13px] font-semibold text-[#1f2937]"
+      >
+        <span> Bucharest </span>
+        <span class="mx-2"> | </span>
+        <span> +40 77-392-660 </span>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative max-w-[1280px] mx-auto px-6 sm:px-12 pt-6 pb-20 flex flex-col-reverse sm:flex-row items-center justify-between overflow-visible"
+    >
+      <div class="max-w-[400px] sm:max-w-[480px]">
+        <h1
+          class="text-[#1f2937] font-extrabold text-[24px] sm:text-[28px] leading-[32px] sm:leading-[36px] mb-2"
+        >
+          Daily heathy food delivery
+        </h1>
+        <p
+          class="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[18px] text-[#374151] mb-6"
+        >
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy.
+        </p>
+        <div class="flex items-center space-x-4 mb-10">
+          <button
+            class="bg-[#9f1239] text-white text-[12px] sm:text-[14px] font-semibold rounded-full px-6 py-2 hover:bg-[#7f0e2c] transition"
+          >
+            Place an order
+          </button>
+          <div
+            class="flex items-center space-x-2 text-[10px] sm:text-[12px] text-[#374151]"
+          >
+            <button
+              aria-label="Play tutorial"
+              class="w-7 h-7 rounded-full border border-[#9f1239] flex items-center justify-center hover:bg-[#9f1239] hover:text-white transition"
+            >
+              <i class="fas fa-play text-[10px]"> </i>
+            </button>
+            <div>
+              <div>Watch a quick tutorial</div>
+              <div class="text-[#6b7280]">How to place an order</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex space-x-10 text-[10px] sm:text-[12px] text-[#374151] font-normal"
+        >
+          <div class="flex flex-col items-center space-y-1">
+            <i class="far fa-user text-[18px]"> </i>
+            <span> Menu made </span>
+            <span> by specialists </span>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <i class="fas fa-seedling text-[18px]"> </i>
+            <span> Only fresh and </span>
+            <span> useful ingredients </span>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <i class="fas fa-truck text-[18px]"> </i>
+            <span> Shipment </span>
+            <span> 3 times a day </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative w-[280px] sm:w-[400px] h-[280px] sm:h-[400px] flex justify-center items-center"
+      >
+        <img
+          alt="Plate with avocado toast topped with spinach leaves and a poached egg, sprinkled with spices on a white plate"
+          class="rounded-full object-cover w-full h-full"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/ab81ce82-5cc9-427c-ecbd-98341cec4352.jpg"
+          width="400"
+        />
+      </div>
+    </section>
+    <!-- Choose your ratio -->
+    <section class="max-w-[1280px] mx-auto px-6 sm:px-12 py-10 relative">
+      <h2
+        class="text-center font-semibold text-[18px] sm:text-[20px] leading-[24px] text-[#1f2937] mb-2"
+      >
+        Choose your ratio
+      </h2>
+      <p
+        class="text-center text-[10px] sm:text-[12px] text-[#6b7280] max-w-[600px] mx-auto mb-6"
+      >
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        clirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam.
+      </p>
+      <div
+        class="flex justify-center space-x-6 mb-8 text-[10px] sm:text-[12px] text-[#374151] font-semibold"
+      >
+        <button class="bg-[#9f1239] text-white rounded-full px-4 py-1">
+          All
+        </button>
+        <button>Vegetarian</button>
+        <button>Gluten Free</button>
+        <button>Sugar Free</button>
+        <button>Drinks</button>
+      </div>
+
+      <div
+        class="grid justify-center gap-4 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3"
+      >
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-md max-w-[360px] flex flex-col">
+          <img
+            alt="People baking cookies in a kitchen"
+            class="rounded-t-lg object-cover w-full h-[180px]"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/2602c314-5684-4104-9974-9d437c11cfba.jpg"
+            width="360"
+          />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-[14px] text-[#1f2937] mb-2">
+              We are opening a new..
+            </h3>
+            <p class="text-[10px] text-[#6b7280] flex-grow">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy clirmod tempor invidunt ut labore et dolore magna
+            </p>
+            <button
+              class="text-[#9f1239] text-[12px] font-semibold mt-4 self-start hover:underline flex items-center space-x-1"
+            >
+              <span> Read more </span>
+              <i class="fas fa-arrow-right text-[10px]"> </i>
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md max-w-[360px] flex flex-col">
+          <img
+            alt="People baking cookies in a kitchen"
+            class="rounded-t-lg object-cover w-full h-[180px]"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/2602c314-5684-4104-9974-9d437c11cfba.jpg"
+            width="360"
+          />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-[14px] text-[#1f2937] mb-2">
+              We are opening a new..
+            </h3>
+            <p class="text-[10px] text-[#6b7280] flex-grow">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy clirmod tempor invidunt ut labore et dolore magna
+            </p>
+            <button
+              class="text-[#9f1239] text-[12px] font-semibold mt-4 self-start hover:underline flex items-center space-x-1"
+            >
+              <span> Read more </span>
+              <i class="fas fa-arrow-right text-[10px]"> </i>
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md max-w-[360px] flex flex-col">
+          <img
+            alt="People baking cookies in a kitchen"
+            class="rounded-t-lg object-cover w-full h-[180px]"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/2602c314-5684-4104-9974-9d437c11cfba.jpg"
+            width="360"
+          />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-[14px] text-[#1f2937] mb-2">
+              We are opening a new..
+            </h3>
+            <p class="text-[10px] text-[#6b7280] flex-grow">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy clirmod tempor invidunt ut labore et dolore magna
+            </p>
+            <button
+              class="text-[#9f1239] text-[12px] font-semibold mt-4 self-start hover:underline flex items-center space-x-1"
+            >
+              <span> Read more </span>
+              <i class="fas fa-arrow-right text-[10px]"> </i>
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md max-w-[360px] flex flex-col">
+          <img
+            alt="People baking cookies in a kitchen"
+            class="rounded-t-lg object-cover w-full h-[180px]"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/2602c314-5684-4104-9974-9d437c11cfba.jpg"
+            width="360"
+          />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-[14px] text-[#1f2937] mb-2">
+              We are opening a new..
+            </h3>
+            <p class="text-[10px] text-[#6b7280] flex-grow">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy clirmod tempor invidunt ut labore et dolore magna
+            </p>
+            <button
+              class="text-[#9f1239] text-[12px] font-semibold mt-4 self-start hover:underline flex items-center space-x-1"
+            >
+              <span> Read more </span>
+              <i class="fas fa-arrow-right text-[10px]"> </i>
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md max-w-[360px] flex flex-col">
+          <img
+            alt="People baking cookies in a kitchen"
+            class="rounded-t-lg object-cover w-full h-[180px]"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/2602c314-5684-4104-9974-9d437c11cfba.jpg"
+            width="360"
+          />
+          <div class="p-4 flex flex-col flex-grow justify-center h-full">
+            <h3 class="font-semibold text-[14px] text-[#1f2937] mb-2">
+              We are opening a new..
+            </h3>
+            <p class="text-[10px] text-[#6b7280] flex-grow">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy clirmod tempor invidunt ut labore et dolore magna
+            </p>
+            <button
+              class="text-[#9f1239] text-[12px] font-semibold mt-4 self-start hover:underline flex items-center space-x-1"
+            >
+              <span> Read more </span>
+              <i class="fas fa-arrow-right text-[10px]"> </i>
+            </button>
+          </div>
+        </div>
+        \
+      </div>
+    </section>
+    <!-- Top today dishes -->
+    <section class="max-w-[1280px] mx-auto px-6 sm:px-12 py-10 relative">
+      <h2
+        class="text-center font-semibold text-[18px] sm:text-[20px] leading-[24px] text-[#1f2937] mb-2"
+      >
+        Top today dishes
+      </h2>
+      <p
+        class="text-center text-[10px] sm:text-[12px] text-[#6b7280] max-w-[600px] mx-auto mb-10"
+      >
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        clirmod tempor invidunt ut labore.
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-10"
+      >
+        <img
+          alt="Mexican style lunch with vegetables on a wooden table with fork and knife"
+          class="rounded-lg shadow-md w-full sm:w-[400px] object-cover"
+          height="240"
+          src="https://storage.googleapis.com/a1aa/image/bd218b68-356e-44a0-5db4-9fe90e749a8a.jpg"
+          width="400"
+        />
+        <div class="flex flex-col space-y-3 max-w-[400px]">
+          <h3 class="text-[#1f2937] font-semibold text-[18px]">
+            Mexican Style Lunch
+          </h3>
+          <span class="text-[#9f1239] font-semibold text-[12px]"> 550 g </span>
+          <div class="flex space-x-2">
+            <img
+              alt="Vegetarian icon"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/21206407-cf17-4247-7edc-f27890ec91ad.jpg"
+              width="20"
+            />
+            <img
+              alt="Gluten free icon"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/cccf10c0-108e-4a86-9ddf-3065e9402d67.jpg"
+              width="20"
+            />
+            <img
+              alt="Sugar free icon"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/6fd7afbe-54e2-453c-1544-f466f6f3fda8.jpg"
+              width="20"
+            />
+          </div>
+          <div class="flex space-x-10 text-[12px] text-[#374151]">
+            <div>
+              <p class="font-semibold mb-1">Ingredients:</p>
+              <ul class="list-disc list-inside text-[10px] text-[#6b7280]">
+                <li>dolor sit amet</li>
+                <li>consetetur sadipscing elitr</li>
+                <li>sed diam nonumy</li>
+                <li class="text-[#f3f4f6] select-none">hidden</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-1">Benefits:</p>
+              <ul class="list-disc list-inside text-[10px] text-[#6b7280]">
+                <li>sugar free</li>
+                <li>consetetur sadipscing elitr</li>
+                <li>sed diam nonumy</li>
+                <li class="text-[#f3f4f6] select-none">hidden</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <span class="text-[#9f1239] font-extrabold text-[18px]">
+              18.99 RON
+            </span>
+            <span class="line-through text-[#6b7280] text-[12px]">
+              22.99 RON
+            </span>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              class="bg-[#9f1239] text-white rounded-full px-8 py-2 font-semibold hover:bg-[#7f0e2c] transition"
+            >
+              Order
+            </button>
+            <button
+              aria-label="Add to favorites"
+              class="border border-[#9f1239] rounded-full w-10 h-10 flex items-center justify-center text-[#9f1239] hover:bg-[#9f1239] hover:text-white transition"
+            >
+              <i class="far fa-heart"> </i>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <button
+            aria-label="Next dish"
+            class="w-10 h-10 rounded-full bg-[#f3f4f6] flex items-center justify-center text-[#6b7280] hover:bg-[#e5e7eb] transition"
+          >
+            <i class="fas fa-chevron-right"> </i>
+          </button>
+          <button
+            aria-label="Previous dish"
+            class="w-10 h-10 rounded-full bg-[#9f1239] flex items-center justify-center text-white hover:bg-[#7f0e2c] transition"
+          >
+            <i class="fas fa-chevron-left"> </i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Helen, Bucharest section -->
+    <section
+      class="max-w-[1280px] mx-auto px-6 sm:px-12 py-20 relative bg-[url('https://placehold.co/1280x240/png?text=Background+with+strawberries+and+tea')] bg-cover bg-center"
+    >
+      <div
+        class="bg-white rounded-lg shadow-lg flex flex-col sm:flex-row items-center max-w-[900px] mx-auto p-6 sm:p-10 space-y-6 sm:space-y-0 sm:space-x-10"
+      >
+        <div
+          class="max-w-[400px] text-[12px] sm:text-[14px] text-[#374151] font-normal"
+        >
+          <h3 class="font-semibold text-[#1f2937] mb-3">Helen, Bucharest</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy clirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr.
+          </p>
+        </div>
+        <img
+          alt="Smiling woman wearing a black beanie and scarf outdoors in winter"
+          class="rounded-lg shadow-md w-[240px] h-[240px] object-cover"
+          height="240"
+          src="https://storage.googleapis.com/a1aa/image/06131e0b-eee1-4f96-85e7-4ef5ed5d6a1b.jpg"
+          width="240"
+        />
+      </div>
+    </section>
+    <!-- News Section -->
+    <section class="max-w-[1280px] mx-auto px-6 sm:px-12 py-16">
+      <h2
+        class="text-center font-semibold text-[18px] sm:text-[20px] leading-[24px] text-[#1f2937] mb-10"
+      >
+        News
+      </h2>
+      <div class="flex flex-col sm:flex-row justify-center gap-8">
+        <div class="grid grid-cols-3">
+          <div class="col-span-1">
+            <img
+              class="h-52 w-full object-cover"
+              src="https://storage.googleapis.com/a1aa/image/2602c314-5684-4104-9974-9d437c11cfba.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-span-2">
+            <div class="p-4 flex flex-col flex-grow h-full justify-center">
+              <h3 class="font-semibold text-[14px] text-[#1f2937] mb-2">
+                We are opening a new..
+              </h3>
+              <p class="text-[10px] text-[#6b7280]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy clirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <button
+                class="text-[#9f1239] text-[12px] font-semibold mt-4 self-start hover:underline flex items-center space-x-1"
+              >
+                <span> Read more </span>
+                <i class="fas fa-arrow-right text-[10px]"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start a healthy life -->
+    <section class="bg-[#f3f4f6] py-16 relative overflow-visible">
+      <img
+        alt="Avocado halves, mushrooms, cherry tomatoes, lettuce and spinach leaves on the left side"
+        class="absolute left-6 top-1/2 -translate-y-1/2 hidden sm:block"
+        height="120"
+        src="https://storage.googleapis.com/a1aa/image/0aecdf7e-95c2-47b4-c920-8ffda2ed141a.jpg"
+        width="120"
+      />
+      <img
+        alt="Plate with avocado toast topped with spinach leaves and a poached egg, sprinkled with spices on a white plate on the right side"
+        class="absolute right-6 top-1/2 -translate-y-1/2 hidden sm:block"
+        height="280"
+        src="https://storage.googleapis.com/a1aa/image/6dd0ed54-c650-421c-2ad9-c07f38b69358.jpg"
+        width="280"
+      />
+      <div class="max-w-[1280px] mx-auto px-6 sm:px-12 text-center">
+        <h2
+          class="font-semibold text-[18px] sm:text-[20px] leading-[24px] text-[#1f2937] mb-2"
+        >
+          Start a healthy life
+        </h2>
+        <p
+          class="text-[10px] sm:text-[12px] text-[#6b7280] max-w-[600px] mx-auto mb-6"
+        >
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        </p>
+        <button
+          class="bg-[#9f1239] text-white text-[12px] sm:text-[14px] font-semibold rounded-full px-6 py-2 hover:bg-[#7f0e2c] transition"
+        >
+          Place an order
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="max-w-[1280px] mx-auto px-6 sm:px-12 py-8 text-[10px] sm:text-[12px] text-[#6b7280]"
+    >
+      <div class="flex flex-col sm:flex-row justify-between items-center mb-6">
+        <div class="flex items-center space-x-1 mb-4 sm:mb-0">
+          <span
+            class="font-extrabold text-[14px] leading-[18px] text-[#1f2937]"
+          >
+            FOOD
+          </span>
+          <span
+            class="font-extrabold text-[14px] leading-[18px] text-[#9f1239]"
+          >
+            RO.
+          </span>
+        </div>
+        <nav
+          class="flex space-x-6 text-[10px] sm:text-[12px] text-[#6b7280] font-normal"
+        >
+          <a class="hover:text-[#9f1239]" href="#"> Rations </a>
+          <a class="hover:text-[#9f1239]" href="#"> News </a>
+          <a class="hover:text-[#9f1239]" href="#"> Delivery </a>
+          <a class="hover:text-[#9f1239]" href="#"> Feedback </a>
+          <a class="hover:text-[#9f1239]" href="#"> Contact </a>
+        </nav>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center text-[10px] sm:text-[12px]"
+      >
+        <span> © 2018 FoodRO.ro. All Rights Reserved. </span>
+        <div class="flex items-center space-x-6 mt-4 sm:mt-0 text-[#9ca3af]">
+          <i class="fas fa-phone-alt"> </i>
+          <span> +40 77-392-660 </span>
+          <i
+            class="fab fa-facebook-f cursor-pointer hover:text-[#9f1239] transition"
+          >
+          </i>
+          <i
+            class="fab fa-twitter cursor-pointer hover:text-[#9f1239] transition"
+          >
+          </i>
+          <i
+            class="fab fa-instagram cursor-pointer hover:text-[#9f1239] transition"
+          >
+          </i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

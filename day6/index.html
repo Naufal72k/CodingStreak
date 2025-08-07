@@ -1,0 +1,698 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>bikinwebyuk E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Header / Navbar -->
+    <header
+      class="flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 border-b border-gray-200"
+    >
+      <div class="flex items-center space-x-2">
+        <img
+          alt="bikinwebyuk logo black text with icon"
+          class="w-6 h-6"
+          height="24"
+          src="https://storage.googleapis.com/a1aa/image/0cef58c6-7b89-403e-8384-263f76a610c1.jpg"
+          width="24"
+        />
+        <span class="font-bold text-lg select-none"> bikinwebyuk </span>
+      </div>
+      <nav
+        class="hidden md:flex space-x-6 text-xs font-semibold tracking-wide text-gray-700"
+      >
+        <a class="text-sky-600" href="#"> HOME </a>
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <span> BLOG </span>
+            <i class="fas fa-chevron-down text-[8px]"> </i>
+          </button>
+          <div
+            class="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-md rounded hidden group-hover:block min-w-[120px] z-10"
+          >
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Blog 1
+            </a>
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Blog 2
+            </a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <span> SHOP </span>
+            <i class="fas fa-chevron-down text-[8px]"> </i>
+          </button>
+          <div
+            class="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-md rounded hidden group-hover:block min-w-[120px] z-10"
+          >
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Shop 1
+            </a>
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Shop 2
+            </a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <span> PAGES </span>
+            <i class="fas fa-chevron-down text-[8px]"> </i>
+          </button>
+          <div
+            class="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-md rounded hidden group-hover:block min-w-[120px] z-10"
+          >
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Page 1
+            </a>
+            <a class="block px-3 py-1 text-xs hover:bg-gray-100" href="#">
+              Page 2
+            </a>
+          </div>
+        </div>
+        <a class="hover:text-sky-600" href="#"> ABOUT </a>
+        <a class="hover:text-sky-600" href="#"> CONTACT US </a>
+      </nav>
+      <div class="flex items-center space-x-4 text-gray-700 text-sm">
+        <button aria-label="Settings" class="hover:text-black">
+          <i class="fas fa-cog"> </i>
+        </button>
+        <button aria-label="Search" class="hover:text-black">
+          <i class="fas fa-search"> </i>
+        </button>
+        <button aria-label="Cart" class="relative hover:text-black">
+          <i class="fas fa-shopping-cart"> </i>
+          <span
+            class="absolute -top-1 -right-2 bg-black text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center"
+          >
+            0
+          </span>
+        </button>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="bg-[#d1dbe0] flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 md:py-20"
+    >
+      <div
+        class="max-w-md md:max-w-lg"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <p class="uppercase text-xs font-bold tracking-widest mb-1">SPORT</p>
+        <p class="uppercase text-xs font-bold tracking-widest mb-4">
+          NEW COLLECTION
+        </p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-3">
+          FOOTWEAR
+          <br />
+          BOOT IN BLACK
+        </h1>
+        <p class="text-xs max-w-xs mb-6 font-light">
+          Temukan koleksi sepatu terbaru kami yang dirancang untuk performa dan
+          gaya, cocok untuk setiap petualangan Anda.
+        </p>
+        <button
+          class="bg-black text-white text-xs font-semibold uppercase px-6 py-2 tracking-widest hover:bg-gray-900"
+        >
+          SHOP NOW
+        </button>
+        <div class="flex space-x-2 mt-6">
+          <div class="w-6 h-[2px] bg-white rounded"></div>
+          <div class="w-3 h-[2px] bg-black rounded"></div>
+        </div>
+      </div>
+      <div class="mt-10 md:mt-0" data-aos="fade-left" data-aos-duration="1000">
+        <img
+          alt="Blue backpack with yellow diamond patch and front pocket with grid pattern"
+          class="w-56 md:w-72 mx-auto"
+          height="320"
+          src="https://storage.googleapis.com/a1aa/image/d939257b-8670-4373-50d4-70f64b47dedd.jpg"
+          width="280"
+        />
+      </div>
+    </section>
+    <!-- Most Viewed Products -->
+    <section class="px-6 md:px-20 py-16">
+      <h2
+        class="text-center font-extrabold text-lg mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        PRODUK PALING BANYAK DILIHAT
+      </h2>
+      <p
+        class="text-center text-xs mb-10 max-w-xl mx-auto font-light"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Temukan pilihan produk terlaris kami yang diminati banyak pelanggan.
+      </p>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8 max-w-6xl mx-auto text-center text-xs font-light"
+      >
+        <!-- Product 1 -->
+        <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Blue and brown backpack front view with new badge"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/7f63f23f-1e5c-43a8-91c8-0119a228e504.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Desain Modern 22L</p>
+          <p class="text-gray-400 line-through text-[10px]">£33.99</p>
+          <p class="font-semibold text-[12px]">£8.00</p>
+        </div>
+        <!-- Product 2 -->
+        <div data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Black backpack front view with new badge"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/f3013def-3640-48fb-f02c-0f248dd0f58b.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Hitam Premium 22L</p>
+          <p class="font-semibold text-[12px]">£279.99</p>
+        </div>
+        <!-- Product 3 -->
+        <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Blue backpack with white straps front view with 29% off badge"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/b8565960-ce07-4daf-8cf2-612abb8d6309.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-800 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              -29%
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Biru Stylish 22L</p>
+          <p class="text-gray-400 line-through text-[10px]">£100.00</p>
+          <p class="font-semibold text-[12px]">£8.00</p>
+        </div>
+        <!-- Product 4 -->
+        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Blue and brown backpack front view with new badge"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/7f63f23f-1e5c-43a8-91c8-0119a228e504.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Coklat Elegan 22L</p>
+          <p class="font-semibold text-[12px]">£100.00</p>
+        </div>
+      </div>
+      <div
+        class="text-center mt-10"
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="1000"
+      >
+        <button
+          class="bg-black text-white text-xs font-semibold uppercase px-6 py-2 tracking-widest hover:bg-gray-900"
+        >
+          LIHAT LEBIH BANYAK
+        </button>
+      </div>
+    </section>
+    <!-- Handbag & Watches promo -->
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-6 mb-16"
+    >
+      <div
+        class="bg-[#c9d9db] flex items-center px-6 py-10"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Man wearing white and black jacket with red sunglasses holding red handbag"
+          class="w-36 h-36 object-cover mr-6"
+          height="160"
+          src="https://storage.googleapis.com/a1aa/image/dcd77673-d295-4422-b26d-a652c3ca33ab.jpg"
+          width="160"
+        />
+        <div>
+          <p class="uppercase text-[9px] font-light tracking-widest mb-1">
+            KOLEKSI
+          </p>
+          <h3 class="font-extrabold text-2xl mb-1">Tas Tangan</h3>
+          <a class="text-xs font-light tracking-wide hover:underline" href="#">
+            Lihat koleksi &gt;
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-[#e3d6cc] flex items-center px-6 py-10"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <img
+          alt="Close up of watch with blue face and brown leather strap"
+          class="w-36 h-36 object-cover mr-6"
+          height="160"
+          src="https://storage.googleapis.com/a1aa/image/d978a90a-4afc-41e9-9bca-91c9c8011b13.jpg"
+          width="160"
+        />
+        <div>
+          <p class="uppercase text-[9px] font-light tracking-widest mb-1">
+            AKSESORIS
+          </p>
+          <h3 class="font-extrabold text-2xl mb-1">Jam Tangan</h3>
+          <a class="text-xs font-light tracking-wide hover:underline" href="#">
+            Lihat koleksi &gt;
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- New Arrivals -->
+    <section class="px-6 md:px-20 mb-16 max-w-6xl mx-auto">
+      <h2
+        class="text-center font-extrabold text-lg mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        PRODUK BARU
+      </h2>
+      <p
+        class="text-center text-xs mb-10 max-w-xl mx-auto font-light"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Temukan koleksi terbaru kami yang baru tiba, siap melengkapi gaya Anda.
+      </p>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8 text-center text-xs font-light"
+      >
+        <!-- New Product 1 -->
+        <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Blue backpack with yellow diamond patch and front pocket with grid pattern"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/d939257b-8670-4373-50d4-70f64b47dedd.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Biru Modern</p>
+          <p class="font-semibold text-[12px]">£100.00</p>
+        </div>
+        <!-- New Product 2 -->
+        <div data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Black smart watch front view"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/5204b67c-33c8-45f6-9455-19cbed067649.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Jam Tangan Pintar Hitam</p>
+          <p class="font-semibold text-[12px]">£200.00</p>
+        </div>
+        <!-- New Product 3 -->
+        <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Blue and brown backpack front view with new badge"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/7f63f23f-1e5c-43a8-91c8-0119a228e504.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Coklat Stylish</p>
+          <p class="font-semibold text-[12px]">£100.00</p>
+        </div>
+        <!-- New Product 4 -->
+        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+          <div class="relative inline-block">
+            <img
+              alt="Gray and orange backpack front view with new badge"
+              class="mx-auto"
+              height="140"
+              src="https://storage.googleapis.com/a1aa/image/8298ab8a-44ba-412d-f2e7-02cacdb57cbf.jpg"
+              width="120"
+            />
+            <span
+              class="absolute top-1 left-1 bg-sky-600 text-white text-[8px] font-bold uppercase px-1 rounded"
+            >
+              BARU
+            </span>
+          </div>
+          <p class="mt-2">Tas Ransel Abu-abu Oranye</p>
+          <p class="font-semibold text-[12px]">£100.00</p>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter and Free Shipping -->
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-20 mb-16 grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <div
+        class="col-span-2 bg-white border border-gray-200 rounded px-8 py-10 flex flex-col justify-center"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <div class="flex items-center mb-4 space-x-3">
+          <i class="fas fa-envelope text-xl"> </i>
+          <h3 class="uppercase text-xs font-bold tracking-widest">
+            DAFTAR UNTUK NEWSLETTER KAMI:
+          </h3>
+        </div>
+        <form class="flex flex-col sm:flex-row items-center gap-3">
+          <input
+            aria-label="Email address"
+            class="border border-gray-300 rounded px-4 py-2 text-xs w-full sm:flex-1 focus:outline-none focus:ring-2 focus:ring-sky-600"
+            placeholder="Masukkan alamat email Anda di sini.."
+            type="email"
+          />
+          <button
+            class="bg-black text-white text-xs font-semibold uppercase px-6 py-2 tracking-widest hover:bg-gray-900"
+            type="submit"
+          >
+            BERLANGGANAN
+          </button>
+        </form>
+      </div>
+      <div
+        class="bg-black text-white rounded p-6 relative"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <div
+          class="absolute top-2 right-2 bg-red-600 text-[9px] font-bold uppercase px-2 py-0.5 rounded"
+        >
+          PELAJARI LEBIH
+        </div>
+        <h4 class="font-bold text-xs mb-2">GRATIS ONGKIR</h4>
+        <p class="text-[10px] font-light max-w-[160px]">
+          UNTUK SEMUA PESANAN DI ATAS $100
+        </p>
+        <button
+          class="mt-6 border border-white text-white text-[10px] font-light uppercase px-4 py-1 tracking-widest hover:bg-white hover:text-black transition"
+        >
+          PELAJARI LEBIH
+        </button>
+        <img
+          alt="Abstract black background with lines and shapes"
+          class="absolute bottom-0 left-0 w-full opacity-10 pointer-events-none select-none"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/91244609-1b9e-4a31-7db8-a433fa540b73.jpg"
+          width="160"
+        />
+      </div>
+    </section>
+    <!-- From Our Blog -->
+    <section class="max-w-6xl mx-auto px-6 md:px-20 mb-16">
+      <h2
+        class="text-center font-extrabold text-lg mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        DARI BLOG KAMI
+      </h2>
+      <p
+        class="text-center text-xs mb-10 max-w-xl mx-auto font-light"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        Dari tas tangan hingga tas bahu yang stylish, temukan inspirasi gaya
+        terbaru di blog kami.
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-[10px] font-light"
+      >
+        <!-- Blog 1 -->
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <img
+            alt="Clothes hanging on a wooden rack in bright room"
+            class="w-full mb-3 object-cover rounded"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/df0ecb45-00d6-4d13-b623-7e0fe5ae2935.jpg"
+            width="320"
+          />
+          <p class="mb-1 text-[9px] font-light text-gray-600">
+            Oleh Admin - 4 April 2024
+          </p>
+          <p class="font-semibold text-[10px]">
+            Tren Fashion Terkini untuk Gaya Anda
+          </p>
+        </div>
+        <!-- Blog 2 -->
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <img
+            alt="Black bags and umbrellas on white marble table"
+            class="w-full mb-3 object-cover rounded"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/3a506d6c-d30c-4641-11c9-03192f5092c8.jpg"
+            width="320"
+          />
+          <p class="mb-1 text-[9px] font-light text-gray-600">
+            Oleh Admin - 4 April 2024
+          </p>
+          <p class="font-semibold text-[10px]">
+            Panduan Memilih Aksesoris yang Tepat
+          </p>
+        </div>
+        <!-- Blog 3 -->
+        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <img
+            alt="Woman sitting on wooden bench wearing black clothes"
+            class="w-full mb-3 object-cover rounded"
+            height="180"
+            src="https://storage.googleapis.com/a1aa/image/d3d38571-8858-4321-cebc-5a6e91cd7f1e.jpg"
+            width="320"
+          />
+          <p class="mb-1 text-[9px] font-light text-gray-600">
+            Oleh Admin - 4 April 2024
+          </p>
+          <p class="font-semibold text-[10px]">
+            Gaya Minimalis untuk Tampilan Sehari-hari
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Brand Logos -->
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-20 mb-16 flex justify-between items-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <img
+        alt="Brand 1 logo black and white"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/7f18f675-8a3a-4aa7-efaa-2d9e43b84d29.jpg"
+        width="100"
+      />
+      <img
+        alt="Brand 2 logo black and white"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/b4eb5723-66f3-4a13-9501-4bee89b0073d.jpg"
+        width="100"
+      />
+      <img
+        alt="Brand 3 logo black and white"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/fdc0bcef-5845-4bc3-3137-d9e317f978ee.jpg"
+        width="100"
+      />
+      <img
+        alt="Brand 4 logo black and white"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/833bbc70-fbc6-4efa-da13-aea330d38cac.jpg"
+        width="100"
+      />
+      <img
+        alt="Brand 5 logo black and white"
+        class="h-10 object-contain"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/9f2b7d69-8831-4c04-966d-252897663dc5.jpg"
+        width="100"
+      />
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black text-white text-[10px]">
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-20 py-12 flex flex-col items-center space-y-6"
+      >
+        <div class="flex items-center space-x-2 mb-4">
+          <img
+            alt="bikinwebyuk logo white"
+            class="w-5 h-5"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/7b1ae514-d8f3-46d6-927c-633070b77a49.jpg"
+            width="20"
+          />
+          <span class="font-bold text-sm select-none"> bikinwebyuk </span>
+        </div>
+        <p class="max-w-3xl text-center leading-tight font-light">
+          Selamat datang di dunia bikinwebyuk. Temukan tren terbaru musim ini
+          dan cara memakainya, dapatkan inspirasi dari profil wanita berpengaruh
+          dan menarik, pelajari proses desain dan produksi di balik produk yang
+          Anda sukai. Luangkan waktu dan jelajahi!
+        </p>
+        <div class="flex space-x-6 text-white text-sm">
+          <a aria-label="Facebook" class="hover:text-sky-600" href="#">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-sky-600" href="#">
+            <i class="fab fa-twitter"> </i>
+          </a>
+          <a aria-label="RSS" class="hover:text-sky-600" href="#">
+            <i class="fas fa-rss"> </i>
+          </a>
+          <a aria-label="Google" class="hover:text-sky-600" href="#">
+            <i class="fab fa-google"> </i>
+          </a>
+          <a aria-label="LinkedIn" class="hover:text-sky-600" href="#">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </div>
+        <div class="w-full border-t border-gray-700 mt-6"></div>
+        <div
+          class="w-full flex flex-col sm:flex-row justify-center sm:justify-between text-[9px] font-semibold uppercase tracking-widest mt-6 space-y-4 sm:space-y-0"
+        >
+          <div class="flex justify-center space-x-6">
+            <a class="hover:text-sky-600" href="#"> TENTANG </a>
+            <a class="hover:text-sky-600" href="#"> INFORMASI PENGIRIMAN </a>
+            <a class="hover:text-sky-600" href="#"> KEBIJAKAN PRIVASI </a>
+            <a class="hover:text-sky-600" href="#"> SYARAT &amp; KETENTUAN </a>
+          </div>
+          <div class="flex justify-center space-x-2">
+            <img
+              alt="Visa payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/d282d844-ed10-4298-94e7-67dc99912d85.jpg"
+              width="40"
+            />
+            <img
+              alt="Mastercard payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/f33a6121-f930-42f1-182b-ae8d9553ee53.jpg"
+              width="40"
+            />
+            <img
+              alt="PayPal payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/482244a8-b427-4cfe-af65-50a27d451df6.jpg"
+              width="40"
+            />
+            <img
+              alt="Stripe payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/7777120b-a528-4694-2583-8d8aa4df96be.jpg"
+              width="40"
+            />
+            <img
+              alt="American Express payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/778be31c-bd55-4e30-ab0c-ce57ec427c62.jpg"
+              width="40"
+            />
+            <img
+              alt="Discover payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/cd50acc4-50ab-4eaa-f046-c03edbd8365f.jpg"
+              width="40"
+            />
+            <img
+              alt="UnionPay payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/b8f4d1c1-054a-4e12-28e0-1c2af0e1f1ec.jpg"
+              width="40"
+            />
+            <img
+              alt="JCB payment method logo"
+              class="h-5 object-contain"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/6d55649c-3a36-4f5b-e7a6-43bc0eb47aff.jpg"
+              width="40"
+            />
+          </div>
+        </div>
+        <p class="text-center text-[8px] font-light mt-6 select-none">
+          Hak Cipta © bikinwebyuk Semua Hak Dilindungi.
+        </p>
+      </div>
+    </footer>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+  </body>
+</html>
